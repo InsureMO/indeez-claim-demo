@@ -1,0 +1,80 @@
+<div class="step2">
+  <div class="row user-details mt-3">
+    <div class="col">
+      <h4 class="text-primary">Your policy details</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="policyNo">Policy Number</label>
+        <div class="input-group mb-3">
+          <input type="text" name="policyNo" id="policyNo" class="form-control" [(ngModel)]="claimData.policyNo">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2"
+              (click)="onPolicyLookup()">Lookup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md hidden-sm">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" name="productName" id="productName" class="form-control" disabled
+          [(ngModel)]="claimData.claimProductName">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="policyHolder">Policy Holder</label>
+        <input type="text" name="policyHolder" id="policyHolder" class="form-control" disabled
+          [(ngModel)]="claimData.claimPolicyHolder">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div class="form-group">
+        <label for="userOffice">Policy Issue Office</label>
+        <input type="text" name="userOffice" id="userOffice" class="form-control" disabled
+          [(ngModel)]="claimData.userOffice">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="quoteDate">Quote Date</label>
+        <input type="text" name="quoteDate" id="quoteDate" class="form-control" disabled
+          [(ngModel)]="claimData.quoteDate">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div class="form-group">
+        <label for="policyEffectiveDate">Policy Effective Date</label>
+        <input type="text" name="policyEffectiveDate" id="policyEffectiveDate" class="form-control" disabled
+          [(ngModel)]="claimData.policyEffectiveDate">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="policyExpiryDate">Policy Expiry Date</label>
+        <input type="text" name="policyExpiryDate" id="policyExpiryDate" class="form-control" disabled
+          [(ngModel)]="claimData.policyExpiryDate">
+      </div>
+    </div>
+  </div>
+  <div class="row user-details mt-3 ">
+    <div class="col d-flex justify-content-center">
+      <button class="btn btn-default mr-3" (click)="onBack()">Back</button>
+      <button type="button" class="btn btn-primary" (click)="onNext()">
+        Next
+      </button>
+    </div>
+  </div>
+</div>

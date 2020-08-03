@@ -1,0 +1,131 @@
+// custom variables
+@import "palette";
+@import "variables";
+
+// branding file
+@import "branding-ebaotech";
+
+// bootstrap core
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// custom theme variables - these can be overridden in the branding files (eg branding-ebaotech)
+$transaction-header-bg-color: $default !default;
+$transaction-header-title-color: $primary !default;
+$transaction-header-content-color: white !default;
+$bg-form: lighten($primary, 33%) !default;
+$app-header-bg-color: $primary !default;
+$app-header-text-color: white !default;
+
+
+.main-container {
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.app-header {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: $app-header-bg-color
+}
+
+.app-header-logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: $h2-font-size;
+  color: $app-header-text-color;
+}
+
+.bg-form {
+  background-color: $bg-form;
+}
+
+.logo {
+  margin-right: 1rem !important;
+}
+
+
+.transaction-header {
+
+  background-color: $transaction-header-bg-color;
+
+  margin-left: -15px;
+  margin-right: -15px;
+
+  padding: 2px 17px 5px;
+
+  .transaction-info {
+    .title {
+      font-weight: bold;
+      color: $transaction-header-title-color;
+    }
+
+    .content {
+      color: $transaction-header-content-color;
+    }
+  }
+}
+
+.checkboxLabel {
+  vertical-align: top;
+  margin-left: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.fixed-nav-container {
+  background-color: $bg-form;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  border: 1px solid $gray-600;
+  color: $gray-600;
+}
+
+.btn-info {
+  min-width: 120px;
+}
+
+.home-image {
+  width: 100vw;
+}
+
+.fixed-bottom {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .fixed-bottom {
+    position: fixed;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .home-image {
+    position: fixed;
+    top: 0rem;
+    width: 100vw;
+    z-index: -100;
+  }
+}
+
+
+@import "fixed-popup-footer";
+@import "switch";
+@import "table";
+@import "wizard";
+// this is only for demo, remove in real app
+@import "google-btn";

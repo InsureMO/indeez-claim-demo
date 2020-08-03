@@ -1,0 +1,21 @@
+<div class="row mt-3">
+  <h4 class="text-primary">We have received your claim</h4>
+</div>
+<div class="row">
+  <div class="col-3">Claim Number:</div>
+  <div class="col text-bold">{{claimData.fnolNumber}}</div>
+</div>
+<div class="row">
+  <div class="col-3">Case ID:</div>
+  <div class="col text-bold">{{claimData.caseId}}</div>
+</div>
+<div class="row mt-3">
+  <div class="col">
+    <p>
+      Thank you for submitting your claim, we have sent confirmation to the following email address:
+      <strong>{{claimData.contactEmail}}</strong>
+    </p>
+    <p>Our customer service team is now looking at your case and will be in contact soon. If you need to contact us,
+      please reference the claim or case numbers above.</p>
+  </div>
+</div>

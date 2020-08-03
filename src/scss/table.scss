@@ -1,0 +1,23 @@
+  .edit-table {
+    tr.selected {
+      background-color: $default;
+      color: $white;
+    }
+    th {
+      color: $primary;
+      font-weight: bold;
+      border: none;
+    }
+    td {
+      border: none;
+    }
+    tbody {
+      tr {
+    @include hover {
+      color: $white;
+      background-color: lighten($primary, 10%);
+      }    
+    }
+  }
+}
+

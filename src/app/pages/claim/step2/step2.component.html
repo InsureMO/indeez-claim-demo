@@ -1,0 +1,190 @@
+<div class="step4">
+  <div class="row user-details mt-3">
+    <div class="col">
+      <h4 class="text-primary">Notice Of Loss</h4>
+      <p>We need to collect some details about the claim.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div class="form-group">
+        <label for="claimPolicyNo">Policy Number</label>
+        <input type="text" name="claimPolicyNo" id="claimPolicyNo" class="form-control" disabled
+          [(ngModel)]="claimData.claimPolicyNo">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="claimProductName">Product Name</label>
+        <input type="text" name="claimProductName" id="claimProductName" class="form-control" disabled
+          [(ngModel)]="claimData.claimProductName">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="claimPolicyHolder">Policy Holder</label>
+        <input type="text" name="claimPolicyHolder" id="claimPolicyHolder" class="form-control" disabled
+          [(ngModel)]="claimData.claimPolicyHolder">
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <h4 class="text-default">Claim Contact Details</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div class="form-group">
+        <label for="claimContactType">Contact Type</label>
+        <select name="claimContactType" id="claimContactType" class="form-control"
+          [(ngModel)]="claimData.claimContactType">
+          <option value="1">Insured / Broker / Their staff</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md">
+      <label for="contactPerson">Contact Name</label>
+      <input type="text" name="contactPerson" id="contactPerson" class="form-control"
+        [(ngModel)]="claimData.contactPerson">
+    </div>
+    <div class="col-md">
+      <label for="contactTelephone">Contact Telephone</label>
+      <input type="text" name="contactTelephone" id="contactTelephone" value="2109999999" class="form-control"
+        [(ngModel)]="claimData.contactTelephone">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="contactEmail">Contact Email Address</label>
+        <input type="text" name="contactEmail" id="contactEmail" class="form-control"
+          [(ngModel)]="claimData.contactEmail">
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <h4 class="text-default">Loss Details</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="lossCause">Loss Cause</label>
+        <select name="lossCause" id="lossCause" class="form-control" [(ngModel)]="claimData.lossCause">
+          <option value="1">Accident</option>
+          <option value="2">Illness</option>
+          <option value="3">Time-off for Parental Care</option>
+          <option value="4">Loss of income for another</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="lastWorkingDay">Last Working Day</label>
+        <input type="date" name="lastWorkingDay" id="lastWorkingDay" class="form-control"
+          [(ngModel)]="claimData.lastWorkingDay">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="natureOfIllness">Nature of Illness</label>
+        <select name="natureOfIllness" id="natureOfIllness" class="form-control"
+          [(ngModel)]="claimData.natureOfIllness">
+          <option value="1">Infections</option>
+          <option value="2">Musculoskeletal</option>
+          <option value="3">Back & Spine Disorders</option>
+          <option value="4">Terminal Illness</option>
+          <option value="5">Mental Health</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+        <label for="doctorsName">Consulting Doctor's Name</label>
+        <input type="text" name="doctorsName" class="form-control" [(ngModel)]="claimData.doctorsName">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="otherDetails">Details of Parental Care or other reasons</label>
+        <textarea name="otherDetails" id="otherDetails" class="form-control"
+          [(ngModel)]="claimData.otherDetails"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="LossDate">Loss Date</label>
+        <input type="date" name="lossDate" id="LossDate" class="form-control" [(ngModel)]="claimData.lossDate">
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="NotificationDate">Notification Date</label>
+        <input type="date" name="notificationDate" id="NotificationDate" class="form-control"
+          [(ngModel)]="claimData.notificationDate">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="form-group">
+        <label for="accidentStreet">Street</label>
+        <input type="text" name="accidentStreet" id="accidentStreet" class="form-control"
+          [(ngModel)]="claimData.accidentStreet">
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="accidentCity">City</label>
+        <input type="text" name="accidentCity" id="accidentCity" class="form-control"
+          [(ngModel)]="claimData.accidentCity">
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <div class="form-group">
+        <label for="accidentState">State</label>
+        <input type="text" name="accidentState" id="accidentState" class="form-control"
+          [(ngModel)]="claimData.accidentState">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="accidentZipCode">Postal Code</label>
+        <input type="text" name="accidentPostCode" id="accidentPostCode" class="form-control"
+          [(ngModel)]="claimData.accidentPostCode">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="accidentCountry">Country</label>
+        <input type="text" name="accidentCountry" id="accidentCountry" class="form-control"
+          [(ngModel)]="claimData.accidentCountry">
+      </div>
+    </div>
+  </div>
+
+  <div class="row user-details mt-3 ">
+    <div class="col d-flex justify-content-center">
+      <button class="btn btn-default mr-3" (click)="onBack()">Back</button>
+      <button type="button" class="btn btn-primary" (click)="onSubmitClaim()">
+        Submit Claim
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+// ebaotech branding
+
+// palette - primary 
+$color1: rgba(0, 102, 179, 1);
+$color2: rgba(148, 156, 161, 1);
+$color3: rgba(245, 130, 32, 1);
+// palette - secondary
+$color4: rgba(27, 90, 125, 1);
+$color5: rgba(6, 167, 226, 1);
+$color6: rgba(246, 179, 50, 1);
+$color7: rgba(255, 198, 0, 1);
+
+// bootstrap variables
+$theme-colors: ("primary": $color1,
+"secondary": white,
+"default": $color3,
+);
+
+$primary: $color1;
+$secondary: white;
+$default: $color3;
+
+// theme variables
+$bg-form: darken(white, 5%);
+$transaction-header-bg-color: $color3;
+$transaction-header-title-color: white;
+$transaction-header-content-color: white;
+
+$app-header-bg-color: white;
+$app-header-text-color:$primary;
+
+
+
+.logo {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('../assets/img/logo_small.png') no-repeat;
+  width: 164px;
+  height: 52px;
+  padding-left: 164px;
+}

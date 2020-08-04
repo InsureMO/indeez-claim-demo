@@ -76,7 +76,7 @@ function sendEmail(emailAddress, name, claimNumber) {
     }
   }
   console.log(`Sending email ${emailAddress}, ${name}, ${claimNumber}`)
-  const email = `Dear ${name},<br/><br/> We have received your claim. The claim number is ${claimNumber}, you can use this number to track the progress of your claim.`
+  const email = `Dear ${name},<br/><br/> We have received your claim. The claim notification reference is ${claimNumber}, you can use this number to track the progress of your claim.`
   const request = {
     consignee: [emailAddress],
     subject: 'Your claim has been received',

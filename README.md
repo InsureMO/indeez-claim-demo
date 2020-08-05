@@ -1,3 +1,46 @@
+# Getting Started
+
+After you have cloned this application you can get started by following these steps:
+
+
+## Step 1
+
+Install the dependencies using `npm install` in both the front end and backend folders:
+
+`npm install`
+
+`cd backend`
+
+`npm install`
+
+`cd ..`
+
+## Step 3
+
+Make sure you have created the `dev.js` file under the folder `backend/config/keys/dev.js`, for example:
+
+```
+module.exports = {
+  insuremo: {
+    api_token: 'eBaoxxxxxx',
+    tenant_id: 'indeez'
+  }
+}
+```
+
+You can get the `api_token` from the InsureMO portal under "API Management", then "Access Token Management".
+
+You can also update the details in the environment files under `src/app/environments`
+
+## Step 3
+
+You can run both the frontend application and backend application using the following script in the base folder:
+
+`npm run dev`
+
+This will concurrently start the backend server & frontend angular application. Any changes you make will be applied to the running app.
+
+
 # IncomeProtectionClaimApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
